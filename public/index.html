@@ -1,32 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/styles.css">
     <title>Express JS</title>
+
 </head>
+
 <body>
-    <!-- bootstap is install as a npm
-    Im not sure how to uninstall -->
     <div class="d-flex flex-wrap justify-content-center container">
         <div class="col-12 m-3 text-center">
             <h1>Welcome to ExpressJS!</h1>
         </div>
-        <div>
-            <form action="/contact-info"  method="POST">
-                <div class="mb-3">
-                    <label for="name" class="form-label">Name:</label>
-                    <input type="text" class="form-control" id="name" name="name">
+        <br>
+        <form action="/contact-form" method="POST">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                    aria-describedby="basic-addon1">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon5">@</span>
                 </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">Email:</label>
-                    <input type="text" class="form-control" id="email" name="email">
-                </div>
+            </div>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control"placeholder="Password" aria-label="Password"
+                aria-describedby="basic-addon1">
                 <input type="submit" class="btn btn-info text-light" value="Submit">
-    
-            </form>
-        </div>
-        <script src="/js/server.js"></script>
+
+                </div>
+            </div>
+            <br>
+            <span>
+            </span>
+        </form>
+    </div>
 </body>
+
 </html>
